@@ -5,12 +5,84 @@
 <meta charset="UTF-8">
 <title>Birthday Manager</title>
 </head>
+<style>
+body {
+	font-size: 18px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+</style>
+</head>
 <body>
-<h1>Download</h1>
-<form method="get" action="files/build-0.0.1-beta.jar">
-   <button type="submit">Download!</button>
-</form>
-<h1>Documentation</h1>
-<a href="javaDocs/index.html">Java Doc</a>
+	<ul>
+		<li><a href="#news">News</a></li>
+
+		<li><a class="active" href="#about">About</a></li>
+
+		<li><a href="#download">Download</a></li>
+
+		<li><a href="#contact">Contact</a></li>
+
+	</ul>
+
+	<div
+		style="padding: 20px; margin-top: 30px; background-color: #1abc9c; height: 1500px;">
+		<h3>
+			<a name="news">News 
+		</h3>
+		​ This is just in Beta so nothing works.
+
+		<h3>
+			<a name="About">About 
+		</h3>
+		​ This is an application which helps you keep track of your birthdays.
+		<p>
+		You can see the Code <a href="https://github.com/SirMoM/BirthdayManager/tree/master/BirthdayManager">here</a>.
+		<p>
+		And if your interested the JavaDocs can be found <a href="javaDocs/index.html">here</a>.
+		
+		
+		<h3>
+			<a name="download">Download 
+		</h3>
+		<p>Latest Version​:</p>
+		<form method="get" action="files/build-0.0.1-beta.jar">
+			<button type="submit">Download!</button>
+		</form>
+
+		<h3>
+			<a name="contact">Contact 
+		</h3>
+		​ Contact me on <a href="https://github.com/SirMoM">Github</a> or
+		write an <a href="mailto:noah.ruben@online.de">E-Mail</a> <p>If you have any issues or suggestions let me know</div>
 </body>
 </html>
