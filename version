@@ -1,4 +1,4 @@
- let text = '
+let text = '
 Version: 0.0.1-beta
 Buildtime: 06-02-2019 11:38:44
 Application-name: Birthday Manager'

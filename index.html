@@ -42,9 +42,10 @@ li a:hover {
 }
 </style>
 </head>
-<script src="foo.txt"></script>
+<script src="version"></script>
 <script>
 	console.log(text);
+	document.getElementById('dw').innerHTML = '<ol><li>$text</li></ol>';
 </script>
 <body>
 	<ul>
@@ -76,7 +77,7 @@ li a:hover {
 		<p>
 			And if your interested the JavaDocs can be found <a
 				href="javaDocs/index.html">here</a>.
-		<h3>
+		<h3 id="dw">
 			<a name="download">Download 
 		</h3>
 		<p>Latest Version​:</p>
