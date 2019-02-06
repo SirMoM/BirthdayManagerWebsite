@@ -42,11 +42,6 @@ li a:hover {
 }
 </style>
 </head>
-<script src="version"></script>
-<script>
-	console.log(text);
-	document.getElementById('dw').innerHTML = '<ol><li>$text</li></ol>';
-</script>
 <body>
 	<ul>
 		<li><a href="#news">News</a></li>
@@ -58,7 +53,6 @@ li a:hover {
 		<li><a href="#contact">Contact</a></li>
 
 	</ul>
-
 	<div
 		style="padding: 20px; margin-top: 30px; background-color: #1abc9c; height: 1500px;">
 		<h3>
@@ -81,6 +75,7 @@ li a:hover {
 			<a name="download">Download 
 		</h3>
 		<p>Latest Version​:</p>
+		<div id="buildInfo"></div>
 		<form method="get" action="jar/build-0.0.1-beta.jar">
 			<button type="submit">Download!</button>
 		</form>
@@ -96,4 +91,5 @@ li a:hover {
 				or suggestions</a> let me know
 	</div>
 </body>
+<script language="javascript" type="text/javascript" src="version.js"></script>
 </html>
