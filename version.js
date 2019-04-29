@@ -5,7 +5,7 @@ let tab = " - "
 
 var buildInfo = document.getElementById("buildInfo");
 
-var versionTxt = document.createTextNode(version + tab + time);
+var versionTxt = document.createTextNode(version + tab + time + tab + tab + tab + "THIS VERSION IS NOT COMPATIBLE WITH LATER VERSIONS");
 
 buildInfo.appendChild(versionTxt);
 /*
