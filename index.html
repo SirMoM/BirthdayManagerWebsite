@@ -1,104 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Birthday Manager</title>
-</head>
-<style>
-body {
-	font-size: 18px;
-}
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
-	position: -webkit-sticky; /* Safari */
-	position: sticky;
-	top: 0;
-}
-
-li {
-	float: left;
-}
-
-li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-
-li a:hover {
-	background-color: #111;
-}
-
-.active {
-	background-color: #4CAF50;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>Birthday Manager</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-	<ul>
-		<li><a href="#news">News</a></li>
+<ul id="header">
+    <li><a href="#news">News</a></li>
+    <li><a href="#changelog">Changelog</a></li>
+    <li><a class="active" href="#about">About</a></li>
+    <li><a href="#download">Download</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+<div style="padding: 20px; background-color: #1abc9c; height: 1500px;">
+    <h2><a name="news"/>News</h2>
+    <p> Release 0.4.0 is out. The newest version is available <a
+            href="https://github.com/SirMoM/BirthdayManager/packages/6815860">here</a>.</p>
+    <h2><a name="changelog"></a>Changelog</h2>
+    <h3>Changelog Version 0.4.0</h3>
+    <ul>
+        <li>Continuous operation: updates the sublists on 00:00:01</li>
+        <li>Update to the localisation of the app</li>
+        <li>Adds an application directory (.gbm)</li>
+        <li>Adds support for multiple "Recent files"</li>
+    </ul>
+    <h3>Changelog Version 0.3.0</h3>
+    <ul>
+        <li>Export birthdays to calendar</li>
+        <li>Write change directly to file if wanted</li>
+        <li>Open file on application startup</li>
+        <li>Save to file on app close</li>
+        <li>Added a bunch of preferences</li>
+        <li>Move from txt based save-system to csv files!</li>
+    </ul>
+    <br>
+    <h2><a name="About"/>About</h2>
+    This is an application which helps you keep track of the birthdays you don't want to miss!
 
-		<li><a class="active" href="#about">About</a></li>
+    <h4> Features:</h4>
+    <ul>
+        <li>Light mode / Dark mode</li>
+        <li>Localisation for English and German</li>
+        <li>Manage birthdays</li>
+        <li>Multiple view keep you informed about the birthdays</li>
+        <li>Birthdays this week</li>
+        <li>The next birthdays</li>
+        <li>The last birthdays</li>
+        <li>Being notified if you missed a birthday</li>
+        <li>Search for specific birthdays</li>
+        <li>Export birthdays to your calendar</li>
+    </ul>
+    <br>
+    You will need to have <a href="https://www.azul.com/downloads/?version=java-8-lts&package=jre-fx">Java</a> if JavaFX
+    installed.
+    <p>
+        You can see the Code <a href="https://github.com/SirMoM/BirthdayManager/tree/master/BirthdayManager">here</a>.
+    <p>
+        And if your interested the JavaDocs can be found <a href="javaDocs/index.html">here</a>.
 
-		<li><a href="#download">Download</a></li>
-
-		<li><a href="#contact">Contact</a></li>
-
-	</ul>
-	<div
-		style="padding: 20px; margin-top: 30px; background-color: #1abc9c; height: 1500px;">
-		<h3>
-			<a name="news">News 
-		</h3>
-		Release 0.3.0 is out ​ This is just in Beta so nothing works.
-
-		<h3>
-			<a name="About">About 
-		</h3>
-		​ This is an application which helps you keep track of your birthdays.
-		You will need to have <a href="https://www.java.com/">Java</a>
-		installed.
-		<p>
-			You can see the Code <a
-				href="https://github.com/SirMoM/BirthdayManager/tree/master/BirthdayManager">here</a>.
-		
-		<p>
-			And if your interested the JavaDocs can be found <a
-				href="javaDocs/index.html">here</a>.
-		<h3 id="dw">
-			<a name="download">Download 
-		</h3>
-		<p>Latest Version​:</p>
-		<div id="buildInfo"></div>
-		<form method="get" action="jar/BirthdayManager-0.3.x-beta.jar">
-			<button type="submit">Download!</button>
-		</form>
-
-		<p>
-			<b>Latest release</b>
-		</p>
-		Version 0.2.0
-		<form method="get" action="jar/BirthdayManager-0.2.jar">
-			<button type="submit">Download!</button>
-		</form>
-
-		<h3>
-			<a name="contact">Contact 
-		</h3>
-		​ Contact me on <a href="https://github.com/SirMoM">Github</a> or
-		write an <a href="mailto:noah.ruben@online.de">E-Mail</a>
-		<p>
-			If you have any <a
-				href="https://github.com/SirMoM/BirthdayManagerWebsite/issues">issues
-				or suggestions</a> let me know
-	</div>
+    <h2 id="dw"><a name="download"/>Download </h2>
+    <p>Latest Version:
+        <button onclick="window.open('https://github.com/SirMoM/BirthdayManager/packages/681586', '_blank');"
+                type="submit">Download!
+        </button>
+    </p>
+    <p>Version 0.4.0:
+        <button onclick="window.open('https://github.com/SirMoM/BirthdayManager/packages/681586?version=0.4.0', '_blank');"
+                type="submit">Download!
+        </button>
+    </p>
+    <h2><a name="contact"/>Contact </h2>
+    Contact me on <a href="https://github.com/SirMoM">Github</a> or write an <a href="mailto:noah.ruben@online.de">E-Mail</a>
+    <p>
+        If you have any <a href="https://github.com/SirMoM/BirthdayManagerWebsite/issues">issues or suggestions</a> let
+        me know!
+</div>
 </body>
-<script language="javascript" type="text/javascript" src="version.js"></script>
 </html>
