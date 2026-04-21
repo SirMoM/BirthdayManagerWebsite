@@ -1,17 +1,24 @@
 
-ul#header {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.header-bar {
     background-color: #333;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    z-index: 10;
+}
+
+ul#header {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0 24px;
+    max-width: 960px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 ul#header li {
-    float: left;
+    float: none;
 }
 
 ul#header li a {
@@ -33,6 +40,8 @@ ul#header li a:hover {
 body {
     font-size: 18px;
     margin: 0;
+    line-height: 1.45;
+    background-color: #1abc9c;
 }
 
 .heading {
@@ -41,4 +50,56 @@ body {
 
 .paragraph {
     padding: 10px;
+}
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 24px 40px;
+    background-color: #1abc9c;
+}
+
+.content h2,
+.content h3,
+.content h4 {
+    scroll-margin-top: 70px;
+}
+
+.content h2 {
+    margin: 40px 0 16px;
+}
+
+.content h2:first-child {
+    margin-top: 16px;
+}
+
+.content h3 {
+    margin: 28px 0 12px;
+}
+
+.content h4 {
+    margin: 24px 0 12px;
+}
+
+.content p,
+.content ul {
+    margin: 0 0 20px;
+}
+
+.content ul {
+    padding-left: 36px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 4px 10px;
+    border: 1px solid #666;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    color: #111;
+    text-decoration: none;
+}
+
+.button-link:hover {
+    background-color: #e5e5e5;
 }

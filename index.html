@@ -6,24 +6,26 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<ul id="header">
-    <li><a href="#news">News</a></li>
-    <li><a href="#changelog">Changelog</a></li>
-    <li><a class="active" href="#about">About</a></li>
-    <li><a href="#download">Download</a></li>
-    <li><a href="#contact">Contact</a></li>
-</ul>
-<div style="padding: 20px; background-color: #1abc9c; height: 1500px;">
-    <h2><a name="news"/>News</h2>
+<div class="header-bar">
+    <ul id="header">
+        <li><a href="#news">News</a></li>
+        <li><a href="#changelog">Changelog</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+<div class="content">
+    <h2 id="news">News</h2>
     <p>Release 0.7.1 is out. The newest version is available <a
-            href="https://github.com/SirMoM/BirthdayManager/packages">here</a>.</p>
-    <h2><a name="changelog"></a>Changelog</h2>
-    <h3>Changelog Version 0.7.1</h3>
+            href="https://github.com/SirMoM/BirthdayManager/packages/681586">here</a>.</p>
+    <h2 id="changelog">Changelog</h2>
+    <h3>0.7.1</h3>
     <ul>
         <li>Localizes remaining runtime dialogs, alerts, and labels</li>
         <li>Fixes and localizes the week and month overview context menus</li>
     </ul>
-    <h3>Changelog Version 0.7.0</h3>
+    <h3>0.7.0</h3>
     <ul>
         <li>Adds a shortcuts view that can be opened from About and Preferences</li>
         <li>Shows the bundled changelog directly in the About window</li>
@@ -31,13 +33,13 @@
         <li>Improves keyboard navigation through the birthday edit forms</li>
         <li>Skips duplicate birthdays while importing data</li>
     </ul>
-    <h3>Changelog Version 0.6.2</h3>
+    <h3>0.6.2</h3>
     <ul>
         <li>Keeps the current week selected when opening or refreshing the month view</li>
         <li>Checks for missed birthdays only once per application session</li>
         <li>Opens and edits the actually selected birthday entry consistently</li>
     </ul>
-    <h3>Changelog Version 0.6.0</h3>
+    <h3>0.6.0</h3>
     <ul>
         <li>Adds a month calendar view and disables sorting in the calendar columns</li>
         <li>Refreshes birthday sublists after replacing loaded persons</li>
@@ -46,19 +48,19 @@
         <li>Fixes partial name matching in the normal search</li>
         <li>Prevents saving birthdays without a selected file</li>
     </ul>
-    <h3>Changelog Version 0.5.0</h3>
+    <h3>0.5.0</h3>
     <ul>
         <li>Ships a standalone executable JAR with bundled JavaFX runtime</li>
         <li>Requires Java 21 for the current standalone release</li>
     </ul>
-    <h3>Changelog Version 0.4.0</h3>
+    <h3>0.4.0</h3>
     <ul>
         <li>Continuous operation: updates the sublists on 00:00:01</li>
         <li>Update to the localisation of the app</li>
         <li>Adds an application directory (.gbm)</li>
         <li>Adds support for multiple "Recent files"</li>
     </ul>
-    <h3>Changelog Version 0.3.0</h3>
+    <h3>0.3.0</h3>
     <ul>
         <li>Export birthdays to calendar</li>
         <li>Write change directly to file if wanted</li>
@@ -68,10 +70,10 @@
         <li>Move from txt based save-system to csv files!</li>
     </ul>
     <br>
-    <h2><a name="About"/>About</h2>
-    This is an application which helps you keep track of the birthdays you don't want to miss!
+    <h2 id="about">About</h2>
+    <p>This is an application which helps you keep track of the birthdays you don't want to miss!</p>
 
-    <h4> Features:</h4>
+    <h4>Features:</h4>
     <ul>
         <li>Light mode / Dark mode</li>
         <li>Localisation for English and German</li>
@@ -85,25 +87,80 @@
         <li>Export birthdays to your calendar</li>
     </ul>
     <br>
-    The standalone JAR bundles JavaFX and requires a Java 21+ JVM.
-    No separate JavaFX installation is required.
-    <p>
-        You can see the Code <a href="https://github.com/SirMoM/BirthdayManager">here</a>.
-    <p>
-        Legacy JavaDocs can be found <a href="javaDocs/index.html">here</a>.
+    <p>The standalone JAR bundles JavaFX and requires a Java 21+ JVM.
+        No separate JavaFX installation is required.</p>
+    <p>You can see the Code <a href="https://github.com/SirMoM/BirthdayManager">here</a>.</p>
+    <p>Legacy JavaDocs can be found <a href="javaDocs/index.html">here</a>.</p>
 
-    <h2 id="dw"><a name="download"/>Download </h2>
+    <h2 id="download">Download </h2>
     <p>The current standalone release is published on GitHub Packages.</p>
-    <p>
-        <button onclick="window.open('https://github.com/SirMoM/BirthdayManager/packages', '_blank');"
-                type="submit">Download 0.7.1
-        </button>
-    </p>
-    <h2><a name="contact"/>Contact </h2>
-    Contact me on <a href="https://github.com/SirMoM">Github</a> or write an <a href="mailto:noah.ruben@online.de">E-Mail</a>
-    <p>
-        If you have any <a href="https://github.com/SirMoM/BirthdayManagerWebsite/issues">issues or suggestions</a> let
-        me know!
+    <p><a class="button-link" href="https://github.com/SirMoM/BirthdayManager/packages/681586"
+          target="_blank">Download 0.7.1</a></p>
+    <h2 id="contact">Contact </h2>
+    <p>Contact me on <a href="https://github.com/SirMoM">Github</a> or write an <a
+            href="mailto:noah.ruben@online.de">E-Mail</a></p>
+    <p>If you have any <a href="https://github.com/SirMoM/BirthdayManagerWebsite/issues">issues or
+        suggestions</a> let me know!</p>
 </div>
+<script>
+    (() => {
+        const header = document.getElementById("header");
+        const navLinks = Array.from(header.querySelectorAll("a"));
+        const sections = navLinks
+            .map((link) => document.querySelector(link.getAttribute("href")))
+            .filter(Boolean);
+
+        const setActive = (id) => {
+            navLinks.forEach((link) => {
+                link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+            });
+        };
+
+        const scheduleUpdate = () => {
+            window.requestAnimationFrame(() => {
+                window.requestAnimationFrame(updateActive);
+            });
+        };
+
+        const updateActive = () => {
+            if (location.hash) {
+                const hashedSection = document.querySelector(location.hash);
+
+                if (hashedSection) {
+                    const rect = hashedSection.getBoundingClientRect();
+
+                    if (rect.top < window.innerHeight && rect.bottom > header.offsetHeight) {
+                        setActive(hashedSection.id);
+                        return;
+                    }
+                }
+            }
+
+            const offset = header.offsetHeight + 8;
+            let currentSection = sections[0];
+
+            sections.forEach((section) => {
+                if (window.scrollY + offset >= section.offsetTop) {
+                    currentSection = section;
+                }
+            });
+
+            if (currentSection) {
+                setActive(currentSection.id);
+            }
+        };
+
+        window.addEventListener("scroll", updateActive, { passive: true });
+        window.addEventListener("hashchange", scheduleUpdate);
+        window.addEventListener("load", scheduleUpdate);
+        navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                setActive(link.getAttribute("href").substring(1));
+            });
+        });
+
+        scheduleUpdate();
+    })();
+</script>
 </body>
 </html>
